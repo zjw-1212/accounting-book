@@ -1,0 +1,64 @@
+.container {
+  padding: 16px;
+  background-image: url('C:/Users/LEGION/Desktop/background.webp'); /* 替换为你的背景图片地址 */
+  background-size: cover; /* 背景图覆盖整个容器 */
+  background-position: center; /* 背景图居中显示 */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* 使用现代字体 */
+}
+
+.input, .picker, .textarea {
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus, .picker:focus, .textarea:focus {
+  border-color: #007aff;
+  box-shadow: 0 0 8px rgba(0, 122, 255, 0.5);
+}
+
+.picker {
+  background-color: rgba(255, 255, 255, 0.8); /* 半透明背景 */
+}
+
+.textarea {
+  resize: none;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.radio {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.button {
+  width: 100%;
+  padding: 12px;
+  background-image: linear-gradient(to right, #007aff, #0051cc); /* 渐变背景 */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.1s;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, #0051cc, #007aff);
+  transform: translateY(-2px); /* 鼠标悬停时上移 */
+}
+
+.button:active {
+  transform: translateY(0); /* 点击时恢复原位 */
+}

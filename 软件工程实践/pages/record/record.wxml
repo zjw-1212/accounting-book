@@ -1,0 +1,21 @@
+<view class="container">
+  <input class="input" placeholder="日期" bindinput="onInputDate" />
+  <input class="input" placeholder="金额" bindinput="onInputAmount" />
+  
+  <!-- 下拉菜单选择类别 -->
+  <picker mode="selector" range="{{categories}}" bindchange="onCategoryChange">
+    <view class="picker">
+      {{selectedCategory || '选择类别'}}
+    </view>
+  </picker>
+  
+  <textarea class="textarea" placeholder="备注" bindinput="onInputRemark"></textarea>
+  
+  <!-- 收入与支出选择 -->
+  <radio-group class="radio-group" bindchange="onTypeChange">
+    <label><radio value="income" class="radio" checked="true"/> 收入</label>
+    <label><radio value="expense" class="radio"/> 支出</label>
+  </radio-group>
+  
+  <button class="button" bindtap="saveRecord">保存记录</button>
+</view>

@@ -1,0 +1,8 @@
+<view class="container">
+  <image src="budget.png" class="header-image" mode="aspectFill" />
+  <text class="title">个人记账本</text>
+  <input placeholder="设定每月支出限额" bindinput="onInputLimit" type="number" />
+  <button bindtap="saveLimit">保存限额</button>
+  <text>当前账户余额: {{balance}} 元</text>
+  <text class="info">请设置一个合理的支出限额，帮助您更好地管理财务。</text>
+</view>
