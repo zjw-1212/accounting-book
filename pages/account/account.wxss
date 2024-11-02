@@ -1,0 +1,73 @@
+.container {
+  padding: 20px;
+  margin: 20px; /* 外部边距 */
+  background-color: #f5f5f5; /* 背景颜色 */
+  border-radius: 10px; /* 圆角 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  align-items: center; /* 水平居中 */
+}
+
+.header-image {
+  width: 100%; /* 使图片宽度占满容器 */
+  height: auto; /* 高度自适应 */
+  margin-bottom: 20px; /* 增加下边距 */
+  border-radius: 10px; /* 圆角效果 */
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px; /* 增加下边距 */
+  color: #333; /* 标题颜色 */
+}
+
+input {
+  width: 100%; /* 使输入框占满容器 */
+  padding: 15px; /* 增加内边距 */
+  margin-bottom: 20px; /* 增加下边距 */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px; /* 增加字体大小 */
+}
+
+button {
+  width: 100%;
+  padding: 15px; /* 增加内边距 */
+  background-color: #007aff; /* 按钮颜色 */
+  color: white; /* 字体颜色 */
+  border: none; /* 去掉边框 */
+  border-radius: 5px; /* 圆角 */
+  cursor: pointer; /* 鼠标指针效果 */
+  font-size: 16px; /* 增加字体大小 */
+}
+
+button:hover {
+  background-color: #005bb5; /* 悬停时变深的颜色 */
+  transform: translateY(-2px); /* 悬停时轻微上升 */
+  transition: background-color 0.3s, transform 0.3s; /* 添加过渡效果 */
+}
+
+.text {
+  margin-top: 15px; /* 上边距 */
+  font-size: 16px; /* 字体大小 */
+  color: #333; /* 字体颜色 */
+}
+
+.info {
+  font-size: 14px; /* 信息框字体大小 */
+  color: #666; /* 信息框文字颜色 */
+  margin-top: 10px; /* 增加上边距 */
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+  .container {
+    margin: 10px; /* 减小外部边距 */
+  }
+
+  input, button {
+    font-size: 14px; /* 调整字体大小 */
+  }
+}
