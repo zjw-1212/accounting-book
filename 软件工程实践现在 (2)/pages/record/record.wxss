@@ -1,0 +1,11 @@
+.container {
+  padding: 16px;
+}
+
+.picker {
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin-bottom: 16px;
+  text-align: center;
+  background-color: #f8f8f8;
+}

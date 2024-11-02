@@ -1,0 +1,14 @@
+<view class="container">
+  <button bindtap="goToRecord">记录收入/支出</button>
+  <button bindtap="goToStatistics">查看统计</button>
+  <button bindtap="goToAccount">账户管理</button> <!-- 新增账户按钮 -->
+
+  <view>
+    <text>最近记录:</text>
+    <block wx:for="{{records}}" wx:key="index">
+      <view>
+        <text>{{item.date}} - {{item.amount}} - {{item.category}} - {{item.remark}} - {{item.type}}</text>
+      </view>
+    </block>
+  </view>
+</view>
