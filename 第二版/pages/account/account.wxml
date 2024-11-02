@@ -1,0 +1,5 @@
+<view class="container">
+  <input placeholder="设定每月支出限额" bindinput="onInputLimit" />
+  <button bindtap="saveLimit">保存限额</button>
+  <text>当前账户余额: {{balance}}</text>
+</view>
