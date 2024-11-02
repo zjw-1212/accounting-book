@@ -1,0 +1,20 @@
+<view class="container">
+  <text>总收入: {{totalIncome}}</text>
+  <text>总支出: {{totalExpense}}</text>
+
+  <picker mode="selector" range="{{categories}}" bindchange="onCategoryChange">
+    <view class="picker">
+      当前选择类别：{{selectedCategory || '请选择类别'}}
+    </view>
+  </picker>
+
+  <view>
+    <text>选择日期：</text>
+    <input type="date" bindinput="onDateChange" />
+    <button bindtap="confirmDate">确定</button>
+  </view>
+
+  <view>
+    <text>选定日期: {{dateDisplay}}</text>
+  </view>
+</view>
