@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="header">
+    <!-- 类别和日期选择器 -->
+    <!-- ... -->
+  </view>
+
+  <view class="stats">
+    <!-- 统计数据 -->
+    <!-- ... -->
+  </view>
+
+  <view class="transactions">
+    <view class="transaction-item" wx:for="{{records}}" wx:key="index">
+      <view class="transaction-info">
+        <text class="category">{{item.category}}</text>
+        <text class="amount">{{item.type === 'income' ? '+' + item.amount : '-' + item.amount}}元</text>
+      </view>
+      <text class="date">{{item.date}}</text>
+    </view>
+  </view>
+</view>
