@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/record/record",
+    "pages/statistics/statistics",
+    "pages/account/account"
+  ],
+  "window": {
+    "navigationBarTitleText": "个人记账本"
+  }
+}
