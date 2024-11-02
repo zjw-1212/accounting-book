@@ -1,0 +1,41 @@
+<view class="container">
+  <view class="header">
+    <picker mode="selector" range="{{categories}}" bindchange="onCategoryChange">
+      <view class="picker-item">
+        <text class="iconfont icon-category"></text>
+        <text class="picker-label">类别</text>
+        <text class="picker-value">{{selectedCategory || '选择类别'}}</text>
+        <text class="iconfont icon-right"></text>
+      </view>
+    </picker>
+    <picker mode="date" bindchange="onStartDateChange" value="{{startDate}}">
+      <view class="picker-item">
+        <text class="iconfont icon-calendar"></text>
+        <text class="picker-label">开始日期</text>
+        <text class="picker-value">{{startDate || '选择日期'}}</text>
+        <text class="iconfont icon-right"></text>
+      </view>
+    </picker>
+    <picker mode="date" bindchange="onEndDateChange" value="{{endDate}}">
+      <view class="picker-item">
+        <text class="iconfont icon-calendar"></text>
+        <text class="picker-label">结束日期</text>
+        <text class="picker-value">{{endDate || '选择日期'}}</text>
+        <text class="iconfont icon-right"></text>
+      </view>
+    </picker>
+  </view>
+
+  <view class="stats">
+    <view class="stat-item">
+      <text class="stat-label">总收入</text>
+      <text class="stat-value">{{totalIncome}}元</text>
+      <text class="iconfont icon-income"></text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-label">总支出</text>
+      <text class="stat-value">{{totalExpense}}元</text>
+      <text class="iconfont icon-expense"></text>
+    </view>
+  </view>
+</view>

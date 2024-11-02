@@ -1,0 +1,90 @@
+.container {
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+.header {
+  display: block; /* 修改为块级布局，使每个picker独占一行 */
+}
+
+.picker-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px 15px;
+  border: 1px solid #ebedf0;
+  color: #a3b0b8;
+  margin-bottom: 15px; /* 为每个选择器添加外边距 */
+}
+
+.picker-label {
+  margin: 0 10px;
+  font-size: 16px;
+  color: #333; /* 标签颜色加深 */
+}
+
+.picker-value {
+  margin-left: auto;
+  color: #333;
+  font-size: 16px;
+}
+
+.iconfont {
+  font-size: 20px;
+  color: #1e90ff; /* 图标颜色统一 */
+}
+
+.icon-right {
+  margin-left: auto;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stat-item {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 0 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat-label {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.stat-value {
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.icon-income,
+.icon-expense {
+  font-size: 30px;
+}
+
+.icon-income {
+  color: #52c41a; /* 收入颜色 */
+}
+
+.icon-expense {
+  color: #f5222d; /* 支出颜色 */
+}
+
+.icon-category,
+.icon-calendar {
+  margin-right: 10px;
+  color: #1e90ff; /* 图标颜色 */
+}
