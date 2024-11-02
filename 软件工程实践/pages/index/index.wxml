@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="title">
+    <text class="title-text">小福记账</text>
+  </view>
+  <view class="button-group">
+    <button class="compact-button" bindtap="goToRecord">记录收入/支出</button>
+    <button class="compact-button" bindtap="goToStatistics">查看统计</button>
+    <button class="compact-button" bindtap="goToAccount">账户管理</button>
+  </view>
+  <view class="recent-records">
+    <text>最近记录:</text>
+    <block wx:for="{{records}}" wx:key="index">
+      <view class="record-item">
+        <text>{{item.date}} - {{item.amount}} - {{item.category}} - {{item.remark}} - {{item.type}}</text>
+      </view>
+    </block>
+  </view>
+</view>
